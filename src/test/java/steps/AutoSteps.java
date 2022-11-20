@@ -75,17 +75,15 @@ public class AutoSteps extends BaseClass {
 		aboutYou.clickOkay();
 		Logs.log("User successfully click the Okay button");
 	}
-	
+
 	@When("homepage steps done")
-	public void homepage_steps_done(){
+	public void homepage_steps_done() {
 		homePage.autoSteps("11368");
 	}
-	
+
 	@Then("about you page steps done")
 	public void about_you_page_steps_done() {
 		aboutYou.aboutYouSteps("Jessy", "N", "Pinkman", "09/11/1988", "9620 57th Ave", "16G", "Corona");
 	}
-		
-	
 
 }

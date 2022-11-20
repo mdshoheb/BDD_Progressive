@@ -15,8 +15,8 @@ Feature: Auto Quote Validation
     And user input apartment number
     And user input city name
     Then user should be able to click okay button
-    
-    @newSteps
-    Scenario: auto quote page steps
+
+  @newSteps
+  Scenario: auto quote page steps
     When homepage steps done
     Then about you page steps done

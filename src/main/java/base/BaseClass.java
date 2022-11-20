@@ -34,7 +34,7 @@ public class BaseClass {
 	public static ConfirmPropertyAddressPage confirnPropertyAddressPage;
 
 	public void setUpDriver() {
-	
+
 		initDriver(config.getProperty(BROWSER));
 		driver.manage().window().maximize();
 		driver.get(config.getProperty((URL)));
@@ -46,7 +46,7 @@ public class BaseClass {
 	}
 
 	private void initDriver(String browser) {
-		 switch (browser) {
+		switch (browser) {
 		case CHROME:
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
