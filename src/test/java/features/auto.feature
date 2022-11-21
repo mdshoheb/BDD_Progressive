@@ -18,5 +18,16 @@ Feature: Auto Quote Validation
 
   @newSteps
   Scenario: auto quote page steps
-    When homepage steps done
+    When homepage steps done with <"11368">
     Then about you page steps done
+
+  @data-driven
+  Scenario Outline: Data Driven approach for BDD
+    When homepage steps done with <zip>
+    Then about you page steps done
+
+    Examples: 
+      | zip     |
+      | '11368' |
+      | '11373' |
+      | '11369' |

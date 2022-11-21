@@ -76,9 +76,9 @@ public class AutoSteps extends BaseClass {
 		Logs.log("User successfully click the Okay button");
 	}
 
-	@When("homepage steps done")
-	public void homepage_steps_done() {
-		homePage.autoSteps("11368");
+	@When("homepage steps done with {string}")
+	public void homepage_steps_done_with(String string) {
+		homePage.autoSteps(string);
 	}
 
 	@Then("about you page steps done")
