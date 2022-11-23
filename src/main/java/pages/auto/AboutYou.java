@@ -51,6 +51,10 @@ public class AboutYou {
 	public void inputLastName(String lastN) {
 		input(lastNamElement, lastN);
 	}
+	
+	public void selectSuffix(String suffix) {
+		selectDropDown(suffixElement, suffix);
+	}
 
 	public void inputLastName(AutoData autoData) {
 		input(lastNamElement, autoData.getLastName());
@@ -93,11 +97,12 @@ public class AboutYou {
 	}
 
 
-	public void aboutYouSteps(String firstN, String middleN, String lastName, String dob,
+	public void aboutYouSteps(String firstN, String middleN, String lastName,String suffix, String dob,
 			String mAddress, String apt, String city) {
 		input(firstNameElement, firstN);
 		input(middleInitialElement, middleN);
 		input(lastNamElement, lastName);
+		selectDropDown(suffixElement, suffix);
 		input(dobElement, dob);
 		input(mailingAddressElement, mAddress);
 		input(aptNumberElement, apt);

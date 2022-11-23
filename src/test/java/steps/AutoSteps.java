@@ -49,6 +49,11 @@ public class AutoSteps extends BaseClass {
 	public void user_input_last_name() {
 		aboutYou.inputLastName("White");
 	}
+	
+	@When("user select suffix")
+	public void  user_select_suffix() {
+		aboutYou.selectSuffix("SR");
+	}
 
 	@When("user input dob")
 	public void user_input_dob() {
@@ -80,10 +85,10 @@ public class AutoSteps extends BaseClass {
 	public void homepage_steps_done_with(String string) {
 		homePage.autoSteps(string);
 	}
-
+	
 	@Then("about you page steps done")
 	public void about_you_page_steps_done() {
-		aboutYou.aboutYouSteps("Jessy", "N", "Pinkman", "09/11/1988", "9620 57th Ave", "16G", "Corona");
+		aboutYou.aboutYouSteps("Jessy", "N", "Pinkman","SR", "09/11/1988", "9620 57th Ave", "16G", "Corona");
 	}
 
 }

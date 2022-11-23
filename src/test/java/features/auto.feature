@@ -10,6 +10,7 @@ Feature: Auto Quote Validation
     When user input firstName
     And user input middle initial
     And user input lastName
+    And user select suffix
     And user input dob
     And user input mailing address
     And user input apartment number
@@ -18,7 +19,7 @@ Feature: Auto Quote Validation
 
   @newSteps
   Scenario: auto quote page steps
-    When homepage steps done with <"11368">
+    When homepage steps done with <"zip">
     Then about you page steps done
 
   @data-driven
